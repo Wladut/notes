@@ -1,9 +1,10 @@
-#Notes
+`Notes`
+
 ![img.png](img.png)
 
 Java notes application which can be used to write notes as .txt files.
 
-##1. Features:
+`1. Features:`
 - black/white theme (frameless):
 ![img_1.png](img_1.png)![img_2.png](img_2.png)
   
@@ -18,7 +19,7 @@ Java notes application which can be used to write notes as .txt files.
 
 - resize
 ![img_6.png](img_6.png)
-##2. How to:
+`2. How to:`
 - after compile start .jar file with notes root folder parameter as following:
 java -jar notes.jar "D:\notes"
   
