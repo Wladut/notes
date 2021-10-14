@@ -11,4 +11,5 @@ module Notes {
     requires org.apache.commons.io;
 
     opens com.notes;
+    opens com.notes.controller;
 }

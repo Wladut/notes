@@ -1,4 +1,4 @@
-package com.notes;
+package com.notes.readfolders;
 
 import javafx.scene.control.TreeItem;
 import java.io.File;
@@ -8,11 +8,11 @@ import java.io.File;
  * Time 20:03
  */
 
-class ReadFolders {
+public class ReadFolders {
 
-    static TreeItem<String> root = new TreeItem<>("Root");
+    public static TreeItem<String> root = new TreeItem<>("Root");
 
-    static void clear(){
+    public static void clear(){
         root = new TreeItem<>("Root");
     }
 
@@ -23,7 +23,7 @@ class ReadFolders {
     }
 
 
-      static void getStructure(String folderPath, TreeItem<String> rootItem) {
+      public static void getStructure(String folderPath, TreeItem<String> rootItem) {
 
         File actualFolderPath = new File(folderPath);
         File[] getFirstFolders = actualFolderPath.listFiles();

@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="698.0" prefWidth="919.0" style="-fx-background-color: #F5F1F0; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.281" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.notes.Notes">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="698.0" prefWidth="919.0" style="-fx-background-color: #F5F1F0; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.281" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.notes.controller.NotesController">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -21,16 +21,16 @@
          </BorderPane.margin>
             <HBox alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="917.0">
                   <ImageView fx:id="tray" fitHeight="30.0" fitWidth="39.0" onMouseClicked="#tray" onMouseEntered="#setEffect" onMouseExited="#setEffect" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../resources/tray.png" />
+                        <Image url="@../../resources/tray.png" />
                   </ImageView>
                   <ImageView fx:id="minimize" fitHeight="24.0" fitWidth="30.0" onMouseClicked="#resize" onMouseEntered="#setEffect" onMouseExited="#setEffect" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../resources/minimize.png" />
+                        <Image url="@../../resources/minimize.png" />
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
                   </ImageView>
                   <ImageView fx:id="exit" fitHeight="26.0" fitWidth="35.0" onMouseClicked="#exit" onMouseEntered="#setEffect" onMouseExited="#setEffect" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../resources/exit.png" />
+                        <Image url="@../../resources/exit.png" />
                      <HBox.margin>
                         <Insets left="15.0" right="30.0" />
                      </HBox.margin>
@@ -44,7 +44,7 @@
                                 <HBox.margin>
                                     <Insets right="10.0"/>
                                 </HBox.margin>
-                                <Image url="@../resources/Notes.png"/>
+                                <Image url="@../../resources/Notes.png"/>
                             </ImageView>
                               <Text fx:id="labelOvertime" fontSmoothingType="LCD" onMouseEntered="#setEffect" onMouseExited="#setEffect" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes">
                                  <font>
@@ -55,7 +55,7 @@
                                  <HBox.margin>
                                     <Insets left="20.0" top="7.0" />
                                  </HBox.margin>
-                                    <Image url="@../resources/refresh.png" />
+                                    <Image url="@../../resources/refresh.png" />
                               </ImageView>
                            <VBox.margin>
                               <Insets left="40.0" />
@@ -69,10 +69,10 @@
                                  <effect>
                                     <SepiaTone level="0.01" />
                                  </effect>
-                                    <Image url="@../resources/ContinentalBlack.JPG" />
+                                    <Image url="@../../resources/noteblack.JPG" />
                               </ImageView>
                               <ImageView fx:id="radioButton" accessibleRole="BUTTON" fitHeight="32.0" fitWidth="42.0" onMouseClicked="#nightMode" onMouseEntered="#setEffect" onMouseExited="#setEffect" pickOnBounds="true" preserveRatio="true">
-                                    <Image url="@../resources/night.png" />
+                                    <Image url="@../../resources/night.png" />
                                  <HBox.margin>
                                     <Insets left="40.0" top="5.0" />
                                  </HBox.margin>
